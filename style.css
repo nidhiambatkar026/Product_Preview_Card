@@ -3,20 +3,37 @@ body{
     padding: 0;
 }
 .container{
-    height: 500px;
-    width: auto;
+    height: 700px;
+    width: 600px;
     margin: 50px auto;
+    display: flex;
+    padding: 10px;
+    position: relative;
 }
 .side_bar{
     height: 300px;
     width: 100px;
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    position: absolute;
 }
 .product_img{
     height: 50px;
     width: 50px;
-    border: 2px solid black;
+    border: 2px solid white;
     object-fit: cover; 
+    margin: 2px;
+}
+.screen{
+    border: 3px solid grey;
+    border-radius: 10px;
+    height: 550px;
+    width: 400px;
+    box-shadow: 0px 0px 5px 5px grey;
+    
+}
+.main_img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
 }
