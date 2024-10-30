@@ -18,9 +18,9 @@
             <img src="Lehenga_pic_1.webp" alt="Lehenga_pic_1" id="main_img"/>
             <h3 id="product_title">Midnight Sparkle</h3>
             <div class="quantity_section">
-                <img src="plus.png" alt="increment_symbol" class="symbol"/>
+                <img src="minus.png" alt="increment_symbol" class="symbol" onclick="dec()"/>
                 <span id="quantity">1</span>
-                <img src="minus.png" alt="decrement_symbol" class="symbol"/>
+                <img src="plus.png" alt="decrement_symbol" class="symbol" onclick="inc()"/>
             </div>
             <div class="button_section">
                 <button type="button" class="button">Add to Cart</button>
@@ -30,6 +30,7 @@
     <script>
         const img_screen = document.getElementById('main_img')
         const title = document.getElementById('product_title')
+        const quant = document.getElementById('quantity')
         function lehenga_img1(){
            img_screen.src ='Lehenga_pic_1.webp'
            title.innerText = "Midnight Sparkle"
@@ -45,6 +46,17 @@
         function lehenga_img4(){
            img_screen.src = 'Lehenga_pic_4.jpeg'
            title.innerText = "Crystal Glow"
+        }
+        function inc()
+        {
+            let no_quantity = parseInt(quant.innerText)
+            quant.innerText = ++no_quantity
+        }
+        function dec(){
+            let no_quantity = parseInt(quant.innerText)
+            if(no_quantity > 1){
+                quant.innerText = --no_quantity
+            }
         }
     </script>
 </body>
