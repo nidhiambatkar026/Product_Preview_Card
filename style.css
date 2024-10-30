@@ -27,7 +27,7 @@ body{
 .screen{
     border: 3px solid grey;
     border-radius: 10px;
-    height: 550px;
+    height: 600px;
     width: 400px;
     box-shadow: 0px 0px 5px 5px grey;
     
@@ -36,4 +36,18 @@ body{
     height: 400px;
     width: 400px;
     object-fit: cover;
+}
+.product_title{
+    text-align: center;
+    font-family: cursive;
+}
+.quantity_section{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+.symbol{
+    height: 35px;
+    width: 35px;
+    margin: 10px;
 }
