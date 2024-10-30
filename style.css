@@ -20,9 +20,13 @@ body{
 .product_img{
     height: 50px;
     width: 50px;
-    border: 2px solid white;
+    border: 1px solid white;
     object-fit: cover; 
     margin: 2px;
+    cursor: pointer;
+}
+.product_img:hover{
+    border: 3px solid white;
 }
 .screen{
     border: 3px solid grey;
@@ -49,5 +53,25 @@ body{
 .symbol{
     height: 35px;
     width: 35px;
-    margin: 10px;
+    margin: 15px;
+}
+.button_section{
+    display: flex;
+    justify-content: center;  
+}
+.button{
+    height: 40px;
+    width: auto;
+    background-color: #00ff00;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+#quantity{
+    font-size: 20px;
 }
