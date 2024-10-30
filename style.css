@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 500px;
+    width: auto;
+    margin: 50px auto;
+}
+.side_bar{
+    height: 300px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.product_img{
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    object-fit: cover; 
+}
