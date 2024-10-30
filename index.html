@@ -15,8 +15,8 @@
             <img src="Lehenga_pic_4.jpeg" alt="Lehenga_pic_4" class="product_img" onclick="lehenga_img4()"/>
         </div>
         <div class="screen">
-            <img src="Lehenga_pic_1.webp" alt="Lehenga_pic_1" class="main_img"/>
-            <h3 class="product_title">Long-skirt Lehenga</h3>
+            <img src="Lehenga_pic_1.webp" alt="Lehenga_pic_1" id="main_img"/>
+            <h3 id="product_title">Midnight Sparkle</h3>
             <div class="quantity_section">
                 <img src="plus.png" alt="increment_symbol" class="symbol"/>
                 <span id="quantity">1</span>
@@ -28,17 +28,23 @@
         </div>
     </div>
     <script>
+        const img_screen = document.getElementById('main_img')
+        const title = document.getElementById('product_title')
         function lehenga_img1(){
-
+           img_screen.src ='Lehenga_pic_1.webp'
+           title.innerText = "Midnight Sparkle"
         }
         function lehenga_img2(){
-
+           img_screen.src = 'lehenga_pic_2.webp'
+           title.innerText = "Purple Majesty"
         }
         function lehenga_img3(){
-
+           img_screen.src = 'Lehenga_pic_3.jpeg'
+           title.innerText = "Silver Starlight"
         }
         function lehenga_img4(){
-
+           img_screen.src = 'Lehenga_pic_4.jpeg'
+           title.innerText = "Crystal Glow"
         }
     </script>
 </body>
